@@ -11,4 +11,16 @@
 .registre {
   border: 0;
   background-color: #4BA3C3;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link:hover {
+  color: #DC143C;
 }/*# sourceMappingURL=menu.css.map */

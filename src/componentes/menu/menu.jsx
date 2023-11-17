@@ -13,7 +13,7 @@ function Menu() {
        <div className='logoDiv'>
           <img src={logo} alt='logo' className="logo"/>
         </div>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="justify-content-center flex-grow-1 pe-0">
             <Nav.Link href="#home" className="me-5">Home</Nav.Link>
