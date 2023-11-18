@@ -1,13 +1,23 @@
-import Menu from './componentes/menu/menu';
 import React from 'react';
-// import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Home from './componentes/home';
-// import Produtos from './componentes/produtos';
-// import Sobre from './componentes/sobre';
 
-function App() {
+import Menu from './componentes/menu/menu';
+
+import Home from './pages/home';
+import Produtos from './pages/produtos';
+import About from './pages/sobre';
+
+import { Route, Routes } from 'react-router-dom';
+
+const App = () => {
   return (
-     <Menu></Menu>
+    <div>
+      <Menu />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="produtos" element={<Produtos />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+     </div>
   );
 }
 
