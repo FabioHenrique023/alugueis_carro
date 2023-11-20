@@ -35,5 +35,22 @@ export class AdminController {
     });
   }
 
+  generateAuthToken = async (request: Request, response: Response): Promise<Response> => {
+    const {email, senha} = request.body;
+    if(!email || !senha)
+        return response.status(401).json({ message: 'Email/senha invalido' })
+    
+      try{
+          const token = await this.adminService.getToken(email, senha);
+          return response.status(200).json({token});
+      }catch(err){
+          return response.status(401).json({ message: 'Não autorizado' })
+      }
+  }
+
+    verifyToken = async (request: Request, response: Response): Promise<Response> => {
+        return response.status(200).json({message: 'authorized'})
+    }
+
 
 }
