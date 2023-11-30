@@ -22,6 +22,7 @@ import { PiStarThin } from "react-icons/pi";
 function Home() {
   return (
     <>
+    <body>
     <main>
       <article>
         {/* 
@@ -803,6 +804,7 @@ function Home() {
         </div>
       </div>
     </footer>
+    </body>
   </>
   
   );
