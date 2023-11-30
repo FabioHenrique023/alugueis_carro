@@ -16,8 +16,15 @@ import Blog5 from '../Assets/blog-5.jpg';
 import { MdOutlinePeopleOutline } from "react-icons/md";
 import { IoFlashOutline } from "react-icons/io5";
 import { IoSpeedometerOutline } from "react-icons/io5";
-import { PiStarThin } from "react-icons/pi";
+import { GiF1Car } from "react-icons/gi";
 
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoHardwareChipOutline } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
+import { IoPersonAddOutline } from "react-icons/io5";
+import { IoCarSportOutline } from "react-icons/io5";
+import { IoPersonOutline } from "react-icons/io5";
+import { FaRegCreditCard } from "react-icons/fa";
 
 function Home() {
   return (
@@ -31,7 +38,7 @@ function Home() {
         <section className="section hero" id="home">
           <div className="container">
             <div className="hero-content">
-              <h2 className="h1 hero-title">A maneira mais fácil de alugar um carro</h2>
+              <h2 className="h1 hero-title animated-text">A maneira mais fácil de alugar um carro</h2>
               <p className="hero-text">
                 Empresa localizada em Rio Verde!
               </p>
@@ -56,7 +63,7 @@ function Home() {
                 </label>
                 <input
                   type="text"
-                  name="monthly-pay"
+                  name="mêsly-pay"
                   id="input-2"
                   className="input-field"
                   placeholder="Adicione um valor R$"
@@ -86,10 +93,10 @@ function Home() {
         <section className="section featured-car" id="featured-car">
           <div className="container">
             <div className="title-wrapper">
-              <h2 className="h2 section-title">Carros em destaque <PiStarThin /></h2>
+              <h2 className="h2 section-title">Carros em destaque <GiF1Car className='cart-icon'/></h2>
               {/* <a href="#" className="featured-car-link">
                 <span>Visualizar</span>
-                <ion-icon name="arrow-forward-outline" />
+                <IoIosArrowRoundForward/>
               </a> */}
             </div>
             <ul className="featured-car-list">
@@ -116,31 +123,31 @@ function Home() {
                     </div>
                     <ul className="card-list">
                       <li className="card-list-item">
-                        <MdOutlinePeopleOutline />
+                        <MdOutlinePeopleOutline className='estilo-icon'/>
                         <span className="card-item-text">4 Pessoas</span>
                       </li>
                       <li className="card-list-item">
-                        <IoFlashOutline />
+                        <IoFlashOutline className='estilo-icon'/>
                         <span className="card-item-text">Hibrido</span>
                       </li>
                       <li className="card-list-item">
-                        <IoSpeedometerOutline />
+                        <IoSpeedometerOutline className='estilo-icon'/>
                         <span className="card-item-text">6.1km / 1-litro</span>
                       </li>
                       <li className="card-list-item">
-                        <ion-icon name="hardware-chip-outline" />
+                        <IoHardwareChipOutline className='estilo-icon'/>
                         <span className="card-item-text">Automatico</span>
                       </li>
                     </ul>
                     <div className="card-price-wrapper">
                       <p className="card-price">
-                        <strong>R$440</strong> / mês
+                        <strong>$440</strong> / mês
                       </p>
                       <button
                         className="btn fav-btn"
                         aria-label="Add to favourite list"
                       >
-                        <ion-icon name="heart-outline" />
+                        <CiHeart />
                       </button>
                       <button className="btn">alugue agora</button>
                     </div>
@@ -170,31 +177,31 @@ function Home() {
                     </div>
                     <ul className="card-list">
                       <li className="card-list-item">
-                        <MdOutlinePeopleOutline />
+                        <MdOutlinePeopleOutline className='estilo-icon'/>
                         <span className="card-item-text">4 Pessoas</span>
                       </li>
                       <li className="card-list-item">
-                        <IoFlashOutline />
+                        <IoFlashOutline className='estilo-icon'/>
                         <span className="card-item-text">Gasolina</span>
                       </li>
                       <li className="card-list-item">
-                        <IoSpeedometerOutline />
+                        <IoSpeedometerOutline className='estilo-icon'/>
                         <span className="card-item-text">8.2km / 1-litro</span>
                       </li>
                       <li className="card-list-item">
-                        <ion-icon name="hardware-chip-outline" />
+                        <IoHardwareChipOutline className='estilo-icon'/>
                         <span className="card-item-text">Automatico</span>
                       </li>
                     </ul>
                     <div className="card-price-wrapper">
                       <p className="card-price">
-                        <strong>$350</strong> / month
+                        <strong>$350</strong> / mês
                       </p>
                       <button
                         className="btn fav-btn"
                         aria-label="Add to favourite list"
                       >
-                        <ion-icon name="heart-outline" />
+                        <CiHeart />
                       </button>
                       <button className="btn">alugue agora</button>
                     </div>
@@ -224,31 +231,31 @@ function Home() {
                     </div>
                     <ul className="card-list">
                       <li className="card-list-item">
-                        <MdOutlinePeopleOutline />
+                        <MdOutlinePeopleOutline className='estilo-icon'/>
                         <span className="card-item-text">4 People</span>
                       </li>
                       <li className="card-list-item">
-                        <IoFlashOutline />
+                        <IoFlashOutline className='estilo-icon'/>
                         <span className="card-item-text">Gasoline</span>
                       </li>
                       <li className="card-list-item">
-                        <IoSpeedometerOutline />
+                        <IoSpeedometerOutline className='estilo-icon'/>
                         <span className="card-item-text">5.3km / 1-litre</span>
                       </li>
                       <li className="card-list-item">
-                        <ion-icon name="hardware-chip-outline" />
-                        <span className="card-item-text">Automatic</span>
+                        <IoHardwareChipOutline className='estilo-icon'/>
+                        <span className="card-item-text">Automatico</span>
                       </li>
                     </ul>
                     <div className="card-price-wrapper">
                       <p className="card-price">
-                        <strong>$400</strong> / month
+                        <strong>$400</strong> / mês
                       </p>
                       <button
                         className="btn fav-btn"
                         aria-label="Add to favourite list"
                       >
-                        <ion-icon name="heart-outline" />
+                        <CiHeart />
                       </button>
                       <button className="btn">alugue agora</button>
                     </div>
@@ -278,31 +285,31 @@ function Home() {
                     </div>
                     <ul className="card-list">
                       <li className="card-list-item">
-                        <MdOutlinePeopleOutline />
+                        <MdOutlinePeopleOutline className='estilo-icon'/>
                         <span className="card-item-text">4 People</span>
                       </li>
                       <li className="card-list-item">
-                        <IoFlashOutline />
+                        <IoFlashOutline className='estilo-icon'/>
                         <span className="card-item-text">Gasoline</span>
                       </li>
                       <li className="card-list-item">
-                        <IoSpeedometerOutline />
+                        <IoSpeedometerOutline className='estilo-icon'/>
                         <span className="card-item-text">7.7km / 1-litre</span>
                       </li>
                       <li className="card-list-item">
-                        <ion-icon name="hardware-chip-outline" />
-                        <span className="card-item-text">Automatic</span>
+                        <IoHardwareChipOutline className='estilo-icon'/>
+                        <span className="card-item-text">Automatico</span>
                       </li>
                     </ul>
                     <div className="card-price-wrapper">
                       <p className="card-price">
-                        <strong>$620</strong> / month
+                        <strong>$620</strong> / mês
                       </p>
                       <button
                         className="btn fav-btn"
                         aria-label="Add to favourite list"
                       >
-                        <ion-icon name="heart-outline" />
+                        <CiHeart />
                       </button>
                       <button className="btn">alugue agora</button>
                     </div>
@@ -332,31 +339,31 @@ function Home() {
                     </div>
                     <ul className="card-list">
                       <li className="card-list-item">
-                        <MdOutlinePeopleOutline />
+                        <MdOutlinePeopleOutline className='estilo-icon'/>
                         <span className="card-item-text">4 People</span>
                       </li>
                       <li className="card-list-item">
-                        <IoFlashOutline />
+                        <IoFlashOutline className='estilo-icon'/>
                         <span className="card-item-text">Gasoline</span>
                       </li>
                       <li className="card-list-item">
-                        <IoSpeedometerOutline />
+                        <IoSpeedometerOutline className='estilo-icon'/>
                         <span className="card-item-text">7.6km / 1-litre</span>
                       </li>
                       <li className="card-list-item">
-                        <ion-icon name="hardware-chip-outline" />
-                        <span className="card-item-text">Automatic</span>
+                        <IoHardwareChipOutline className='estilo-icon'/>
+                        <span className="card-item-text">Automatico</span>
                       </li>
                     </ul>
                     <div className="card-price-wrapper">
                       <p className="card-price">
-                        <strong>$530</strong> / month
+                        <strong>$530</strong> / mês
                       </p>
                       <button
                         className="btn fav-btn"
                         aria-label="Add to favourite list"
                       >
-                        <ion-icon name="heart-outline" />
+                        <CiHeart />
                       </button>
                       <button className="btn">alugue agora</button>
                     </div>
@@ -386,31 +393,31 @@ function Home() {
                     </div>
                     <ul className="card-list">
                       <li className="card-list-item">
-                        <MdOutlinePeopleOutline />
+                        <MdOutlinePeopleOutline className='estilo-icon'/>
                         <span className="card-item-text">4 People</span>
                       </li>
                       <li className="card-list-item">
-                        <IoFlashOutline />
+                        <IoFlashOutline className='estilo-icon'/>
                         <span className="card-item-text">Gasoline</span>
                       </li>
                       <li className="card-list-item">
-                        <IoSpeedometerOutline />
+                        <IoSpeedometerOutline className='estilo-icon'/>
                         <span className="card-item-text">7.2km / 1-litre</span>
                       </li>
                       <li className="card-list-item">
-                        <ion-icon name="hardware-chip-outline" />
-                        <span className="card-item-text">Automatic</span>
+                        <IoHardwareChipOutline className='estilo-icon'/>
+                        <span className="card-item-text">Automatico</span>
                       </li>
                     </ul>
                     <div className="card-price-wrapper">
                       <p className="card-price">
-                        <strong>$490</strong> / month
+                        <strong>$490</strong> / mês
                       </p>
                       <button
                         className="btn fav-btn"
                         aria-label="Add to favourite list"
                       >
-                        <ion-icon name="heart-outline" />
+                        <CiHeart />
                       </button>
                       <button className="btn">alugue agora</button>
                     </div>
@@ -425,17 +432,16 @@ function Home() {
   */}
         <section className="section get-start">
           <div className="container">
-            <h2 className="h2 section-title">Get started with 4 simple steps</h2>
+            <h2 className="h2 section-title">Comece com 4 passos simples</h2>
             <ul className="get-start-list">
               <li>
                 <div className="get-start-card">
                   <div className="card-icon icon-1">
-                    <ion-icon name="person-add-outline" />
+                  <IoPersonAddOutline />
                   </div>
-                  <h3 className="card-title">Create a profile</h3>
+                  <h3 className="card-title">Crie um perfil</h3>
                   <p className="card-text">
-                    If you are going to use a passage of Lorem Ipsum, you need to
-                    be sure.
+                  Se você for usar uma passagem de Lorem Ipsum, precisa ter certeza.
                   </p>
                   <a href="#" className="card-link">
                     Get started
@@ -445,21 +451,20 @@ function Home() {
               <li>
                 <div className="get-start-card">
                   <div className="card-icon icon-2">
-                    <ion-icon name="car-outline" />
+                  <IoCarSportOutline />
                   </div>
-                  <h3 className="card-title">Tell us what car you want</h3>
+                  <h3 className="card-title">Diga-nos qual carro você quer</h3>
                   <p className="card-text">
-                    Various versions have evolved over the years, sometimes by
-                    accident, sometimes on purpose
+                  Várias versões evoluíram ao longo dos anos, às vezes por acidente, às vezes propositalmente
                   </p>
                 </div>
               </li>
               <li>
                 <div className="get-start-card">
                   <div className="card-icon icon-3">
-                    <ion-icon name="person-outline" />
+                  <IoPersonOutline />
                   </div>
-                  <h3 className="card-title">Match with seller</h3>
+                  <h3 className="card-title">Combine com o vendedor</h3>
                   <p className="card-text">
                     It to make a type specimen book. It has survived not only five
                     centuries, but also the leap into electronic
@@ -469,9 +474,9 @@ function Home() {
               <li>
                 <div className="get-start-card">
                   <div className="card-icon icon-4">
-                    <ion-icon name="card-outline" />
+                  <FaRegCreditCard />
                   </div>
-                  <h3 className="card-title">Make a deal</h3>
+                  <h3 className="card-title">Fazer um acordo</h3>
                   <p className="card-text">
                     There are many variations of passages of Lorem available, but
                     the majority have suffered alteration
@@ -486,7 +491,7 @@ function Home() {
   */}
         <section className="section blog" id="blog">
           <div className="container">
-            <h2 className="h2 section-title">Our Blog</h2>
+            <h2 className="h2 section-title">Blog</h2>
             <ul className="blog-list has-scrollbar">
               <li>
                 <div className="blog-card">
@@ -494,18 +499,18 @@ function Home() {
                     <a href="#">
                       <img
                         src={Blog1}
-                        alt="Opening of new offices of the company"
+                        alt="Abertura de novos escritórios da empresa"
                         loading="lazy"
                         className="w-100"
                       />
                     </a>
                     <a href="#" className="btn card-badge">
-                      Company
+                      Compania
                     </a>
                   </figure>
                   <div className="card-content">
                     <h3 className="h3 card-title">
-                      <a href="#">Opening of new offices of the company</a>
+                      <a href="#">Abertura de novos escritórios da empresa</a>
                     </h3>
                     <div className="card-meta">
                       <div className="publish-date">
@@ -526,23 +531,23 @@ function Home() {
                     <a href="#">
                       <img
                         src={Blog2}
-                        alt="What cars are most vulnerable"
+                        alt="Quais carros são mais vulneráveis"
                         loading="lazy"
                         className="w-100"
                       />
                     </a>
                     <a href="#" className="btn card-badge">
-                      Repair
+                      Reparar
                     </a>
                   </figure>
                   <div className="card-content">
                     <h3 className="h3 card-title">
-                      <a href="#">What cars are most vulnerable</a>
+                      <a href="#">Quais carros são mais vulneráveis</a>
                     </h3>
                     <div className="card-meta">
                       <div className="publish-date">
                         <ion-icon name="time-outline" />
-                        <time dateTime="2022-01-14">January 14, 2022</time>
+                        <time dateTime="2022-01-14">14 Janeiro, 2022</time>
                       </div>
                       <div className="comments">
                         <ion-icon name="chatbubble-ellipses-outline" />
@@ -558,23 +563,23 @@ function Home() {
                     <a href="#">
                       <img
                         src={Blog3}
-                        alt="Statistics showed which average age"
+                        alt="As estatísticas mostraram qual idade média"
                         loading="lazy"
                         className="w-100"
                       />
                     </a>
                     <a href="#" className="btn card-badge">
-                      Cars
+                      Carros
                     </a>
                   </figure>
                   <div className="card-content">
                     <h3 className="h3 card-title">
-                      <a href="#">Statistics showed which average age</a>
+                      <a href="#">As estatísticas mostraram qual idade média</a>
                     </h3>
                     <div className="card-meta">
                       <div className="publish-date">
                         <ion-icon name="time-outline" />
-                        <time dateTime="2022-01-14">January 14, 2022</time>
+                        <time dateTime="2022-01-14">14 Janeiro, 2022</time>
                       </div>
                       <div className="comments">
                         <ion-icon name="chatbubble-ellipses-outline" />
@@ -590,23 +595,23 @@ function Home() {
                     <a href="#">
                       <img
                         src={Blog4}
-                        alt="What´s required when renting a car?"
+                        alt="O que é necessário ao alugar um carro?"
                         loading="lazy"
                         className="w-100"
                       />
                     </a>
                     <a href="#" className="btn card-badge">
-                      Cars
+                      Aluguel
                     </a>
                   </figure>
                   <div className="card-content">
                     <h3 className="h3 card-title">
-                      <a href="#">What´s required when renting a car?</a>
+                      <a href="#">O que é necessário ao alugar um carro?</a>
                     </h3>
                     <div className="card-meta">
                       <div className="publish-date">
                         <ion-icon name="time-outline" />
-                        <time dateTime="2022-01-14">January 14, 2022</time>
+                        <time dateTime="2022-01-14">14 Janeiro, 2022</time>
                       </div>
                       <div className="comments">
                         <ion-icon name="chatbubble-ellipses-outline" />
@@ -622,18 +627,18 @@ function Home() {
                     <a href="#">
                       <img
                         src={Blog5}
-                        alt="New rules for handling our cars"
+                        alt="Novas regras para lidar com nossos carros"
                         loading="lazy"
                         className="w-100"
                       />
                     </a>
                     <a href="#" className="btn card-badge">
-                      Company
+                      Empresa
                     </a>
                   </figure>
                   <div className="card-content">
                     <h3 className="h3 card-title">
-                      <a href="#">New rules for handling our cars</a>
+                      <a href="#">Novas regras para lidar com nossos carros</a>
                     </h3>
                     <div className="card-meta">
                       <div className="publish-date">
@@ -661,17 +666,15 @@ function Home() {
         <div className="footer-top">
           <div className="footer-brand">
             <a href="#" className="logo">
-              <img src="./assets/images/logo.svg" alt="Ridex logo" />
+              <p>LOGO</p>
             </a>
-            <p className="footer-text">
-              Search for cheap rental cars in New York. With a diverse fleet of
-              19,000 vehicles, Waydex offers its consumers an attractive and fun
-              selection.
+            <p className="footer-text" style={{ textAlign: 'justify' }}>
+            Pesquise carros de aluguel baratos em Rio Verde. Com uma frota diversificada de 19 mil veículos, a rentcar oferece aos seus consumidores uma seleção atrativa e divertida.
             </p>
           </div>
           <ul className="footer-list">
             <li>
-              <p className="footer-list-title">Company</p>
+              <p className="footer-list-title">Empresa</p>
             </li>
             <li>
               <a href="#" className="footer-link">
@@ -680,23 +683,23 @@ function Home() {
             </li>
             <li>
               <a href="#" className="footer-link">
-                Pricing plans
+                Preços
               </a>
             </li>
             <li>
               <a href="#" className="footer-link">
-                Our blog
+                blog
               </a>
             </li>
             <li>
               <a href="#" className="footer-link">
-                Contacts
+                Contatos
               </a>
             </li>
           </ul>
           <ul className="footer-list">
             <li>
-              <p className="footer-list-title">Support</p>
+              <p className="footer-list-title">Suporte</p>
             </li>
             <li>
               <a href="#" className="footer-link">
@@ -721,21 +724,21 @@ function Home() {
           </ul>
           <ul className="footer-list">
             <li>
-              <p className="footer-list-title">Neighborhoods in New York</p>
+              <p className="footer-list-title">Bairros em Rio Verde</p>
             </li>
             <li>
               <a href="#" className="footer-link">
-                Manhattan
+                Presidente Vargas
               </a>
             </li>
             <li>
               <a href="#" className="footer-link">
-                Central New York City
+                Setor Central
               </a>
             </li>
             <li>
               <a href="#" className="footer-link">
-                Upper East Side
+                Bairro Popular
               </a>
             </li>
             <li>

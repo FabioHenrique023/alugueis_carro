@@ -115,6 +115,12 @@ input { width: 100%; }
 
 ion-icon { pointer-events: none; }
 
+.estilo-icon {
+  font-size: 20px;
+  color: var(--carolina-blue);
+  --ionicon-stroke-width: 50px;
+}
+
 html {
   font-family: var(--ff-open-sans);
   color: var(--eerie-black);
@@ -123,10 +129,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/* SeuArquivoDeEstilos.css */
+
 body {
+  /* Adicione a classe animate__animated e a animação desejada */
+  animation: fadeIn 4s; /* Você pode ajustar a duração conforme necessário */
   background: var(--alice-blue-1);
   overflow-x: hidden;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 ::-webkit-scrollbar {
   width: 15px;
@@ -141,9 +161,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover { background: hsla(219, 14%, 60%, 0.5); }
-
-
-
 
 
 /*-----------------------------------*\
@@ -207,14 +224,24 @@ button, a { transition: var(--transition); }
 .h2,
 .h3 { font-weight: var(--fw-400); }
 
-.h2 { font-size: var(--fs-2); }
+.h2 { font-size: var(--fs-2); margin-left: 30px;}
 
 .h3 { font-size: var(--fs-4); }
 
 .w-100 { width: 100%; }
 
+/* styles.css */
 
+@keyframes moveCart {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(12cm); } /* Ajuste a distância conforme necessário */
+}
 
+.cart-icon {
+  animation: moveCart 5s linear infinite; /* Ajuste a duração e a função de temporização conforme necessário */
+  color: var(--independence);
+  font-size: 1.3cm;
+}
 
 
 /*-----------------------------------*\
@@ -256,58 +283,6 @@ button, a { transition: var(--transition); }
   --shadow-2: var(--shadow-1);
   box-shadow: var(--shadow-1);
 }
-
-.nav-toggle-btn span {
-  background: var(--independence);
-  width: 22px;
-  height: 2px;
-  border-radius: 2px;
-  margin-block: 8px;
-  transform-origin: right;
-  transition: var(--transition);
-}
-
-.nav-toggle-btn span.two { transform: scaleX(0.7); }
-
-.nav-toggle-btn span.three { transform: scaleX(0.4); }
-
-.nav-toggle-btn:is(:hover, :focus) span { background: var(--carolina-blue); }
-
-.nav-toggle-btn.active span {
-  transform: scaleX(1);
-  background: var(--carolina-blue);
-}
-
-.navbar {
-  background: var(--alice-blue-1);
-  position: fixed;
-  top: 70px;
-  bottom: 0;
-  right: -260px;
-  max-width: 260px;
-  width: 100%;
-  padding: 20px 25px;
-  border: 1px solid var(--white);
-  box-shadow: var(--shadow-1);
-  visibility: hidden;
-  transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);
-}
-
-.navbar.active {
-  visibility: visible;
-  transform: translateX(-100%);
-  transition: 0.5s cubic-bezier(0.33, 0.85, 0.56, 1.02);
-}
-
-.navbar-link {
-  color: var(--independence);
-  font-family: var(--ff-nunito);
-  font-size: var(--fs-6);
-  padding-block: 5px;
-  margin-bottom: 15px;
-}
-
-.navbar-link:is(:hover, :focus) { color: var(--carolina-blue); }
 
 .overlay {
   position: fixed;
@@ -755,7 +730,7 @@ button, a { transition: var(--transition); }
   row-gap: 50px;
 }
 
-.footer-top .logo { margin-bottom: 20px; }
+.footer-top .logo { margin-bottom: 20px; width: 50px;}
 
 .footer-text {
   font-size: var(--fs-6);
@@ -948,7 +923,7 @@ button, a { transition: var(--transition); }
     align-items: center;
     z-index: 1;
   }
-
+  
   .hero-form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 0.8fr;
@@ -1089,16 +1064,11 @@ button, a { transition: var(--transition); }
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
 
   .container { max-width: 1170px; }
-
-
-
 
   /**
    * HEADER
