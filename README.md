@@ -1,5 +1,6 @@
 # Aluguel De Carro
-Projeto desenvolvido para a disciplina de programação orientada a objeto 2
+Projeto desenvolvido para a disciplina de programação orientada a objetos 2. Ela foi desenvolvida com Express e TypeORM para o backend, e React.js,  Bootstrap, HTML, CSS, para o frontend. Banco de dados utilizado foi o PostgreSQL. 
+
 
 ![captura da tela](/front-end/captura-tela.png)
 
