@@ -85,4 +85,4 @@ Routes:
 + /home: primeira tela do website
 + /produtos: rota para visualização dos produtos
 + /about: rota para visualização informativa
-+ /admin/: apenas tela de login
++ /admin: apenas tela de login
