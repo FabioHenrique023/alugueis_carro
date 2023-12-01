@@ -1,5 +1,7 @@
-# alugueis_carro
+# Aluguel De Carro
 Projeto desenvolvido para a disciplina de programação orientada a objeto 2
+
+![captura da tela](/frontend/captura-tela.png)
 
 ## Clone do projeto
 ```bash
