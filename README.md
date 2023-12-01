@@ -8,7 +8,7 @@ https://github.com/FabioHenrique023/alugueis_carro.git
 ## Recursos
 
 - Layout responsivo
-- Puxando dados do banco de dados da tabela carros
+- Recuperando informações do banco de dados para visualização na página de produtos
 
 ## Instruções de Instalação e Uso
 
