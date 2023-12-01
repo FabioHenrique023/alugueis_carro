@@ -62,7 +62,7 @@ O aplicativo estará acessível em http://localhost:3000
 
 ### Levantamento de Requisitos
 
-Aqui estão os principais requisitos da aplicação To-Do List Fullstack:
+Requisitos do website aluguel de carros:
 
 #### Requisitos Funcionais:
 
@@ -84,7 +84,3 @@ Routes:
 + /produtos: rota para visualização dos produtos
 + /about: rota para visualização informativa
 + /admin/: apenas tela de login
-
-### Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests para melhorias.
