@@ -1245,4 +1245,8 @@ button, a {
   font-size: 16px;
   font-weight: bold;
   color: var(--primary);
+}
+
+.cliente-title {
+  text-align: center;
 }/*# sourceMappingURL=sobre.css.map */

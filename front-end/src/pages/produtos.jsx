@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/produto.css';
+import { useState, useEffect } from 'react';
 
 import CarImagem from '../Assets/car-1.jpg';
 import CarImagem2 from '../Assets/car-2.jpg';
@@ -27,6 +28,22 @@ import { IoPersonOutline } from "react-icons/io5";
 import { FaRegCreditCard } from "react-icons/fa";
 
 function Produtos() {
+  const [carroData, setCarroData] = useState(null);
+
+  useEffect(() => {
+    const getCarroById = async (idcarro) => {
+      try {
+        const response = await fetch(`http://localhost:3001/api/carros/${idcarro}`);
+        const data = await response.json();
+        setCarroData(data);
+      } catch (error) {
+        console.error("Erro ao buscar carro:", error);
+      }
+    };
+
+    // Chame a função com o ID do carro desejado
+    getCarroById('550e8400-e29b-41d4-a716-446655440000'); // Substitua 1 pelo ID do carro desejado
+  }, []); 
   return (
     <>
     <body>
@@ -60,10 +77,10 @@ function Produtos() {
                   <div className="card-content">
                     <div className="card-title-wrapper">
                       <h3 className="h3 card-title">
-                        <a href="#">Toyota RAV4</a>
+                        <a href="#">{carroData?.nome}</a>
                       </h3>
                       <data className="year" value={2021}>
-                        2021
+                        {carroData?.ano}
                       </data>
                     </div>
                     <ul className="card-list">

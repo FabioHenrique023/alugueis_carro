@@ -57,7 +57,7 @@ function Sobre() {
       
       <section className="section testimonials">
       <div className="container">
-        <h2 className="h2 section-title">O que nossos clientes dizem</h2>
+        <h2 className="cliente-title">O que nossos clientes dizem</h2>
         <div className="testimonial-cards">
           {/* Card 1 */}
           <div className="testimonial-card">
